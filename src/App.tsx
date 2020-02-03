@@ -7,6 +7,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 import './App.scss';
 import Index from './components/index';
+import Language from './components/language';
 import Test from './components/test/test';
 
 const client = new ApolloClient({
@@ -23,6 +24,7 @@ class App extends Component {
                 <Route exact path="/" component={Index} />
                 <Route exact path="/test" component={Test} />
                 <Route exact path="/404" component={Error404} />
+                <Route exact path="/language" component={Language} />
                 <Route component={Error404} />
               </Switch>
             </div>
